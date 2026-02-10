@@ -1,0 +1,98 @@
+{
+  "version": 2,
+  "name": "samriddhi-udyo-masala",
+  "alias": ["samriddhi-udyog-masala", "samriddhi-masala"],
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "styles.css", 
+      "use": "@vercel/static"
+    },
+    {
+      "src": "script.js",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/styles.css",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/script.js", 
+      "dest": "/script.js",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options", 
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/home",
+      "dest": "/"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/about",
+      "dest": "/#about"
+    },
+    {
+      "source": "/products", 
+      "dest": "/#products"
+    },
+    {
+      "source": "/contact",
+      "dest": "/#contact"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
