@@ -1,1 +1,63 @@
-{\n  "version": 2,\n  "cleanUrls": true,\n  "trailingSlash": false,\n\n  "headers": [\n    {\n      "source": "/(.*)",\n      "headers": [\n        {\n          "key": "X-Content-Type-Options",\n          "value": "nosniff"\n        },\n        {\n          "key": "X-Frame-Options",\n          "value": "DENY"\n        },\n        {\n          "key": "Referrer-Policy",\n          "value": "strict-origin-when-cross-origin"\n        }\n      ]\n    },\n    {\n      "source": "/index.html",\n      "headers": [\n        {\n          "key": "Cache-Control",\n          "value": "public, max-age=3600"\n        }\n      ]\n    }\n  ],\n\n  "redirects": [\n    {\n      "source": "/home",\n      "destination": "/"\n    }\n  ],\n\n  "rewrites": [\n    {\n      "source": "/about",\n      "destination": "/#about"\n    },\n    {\n      "source": "/products",\n      "destination": "/#products"\n    },\n    {\n      "source": "/contact",\n      "destination": "/#contact"\n    },\n    {\n      "source": "/(.*)",\n      "destination": "/index.html"\n    }\n  ]\n}
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/"
+    },
+    {
+      "source": "/about",
+      "destination": "/#about", 
+      "permanent": false
+    },
+    {
+      "source": "/products",
+      "destination": "/#products",
+      "permanent": false
+    },
+    {
+      "source": "/contact",
+      "destination": "/#contact",
+      "permanent": false
+    }
+  ],
+
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
