@@ -3,494 +3,250 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Samriddhi Udyog Masala - From an Assam Village to Your Kitchen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samriddhi Udyog Masala | Premium Organic Spices</title>
     <meta name="description"
-        content="Premium organic masala from Assam village. 100% natural, chemical-free spices including haldi, chilli, jeera, daniya, garam masala and meat masala.">
-    <meta name="keywords"
-        content="organic spices, masala, Assam, turmeric, haldi, chilli powder, cumin, coriander, garam masala, natural spices">
-    <meta name="author" content="Samriddhi Udyog Masala">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Samriddhi Udyog Masala - From an Assam Village to Your Kitchen">
-    <meta property="og:description"
-        content="Premium organic masala from Assam village. 100% natural, chemical-free spices.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-domain.vercel.app">
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="script.js" as="script">
+        content="From an Assam Village to Your Kitchen. Premium, handcrafted, organic masalas. 100% natural, chemical-free, and ethically sourced.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fraunces:opsz,wght@9..144,300;400;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;400;600&family=Outfit:wght@300;400;500;600&family=Pacifico&display=swap"
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Icons -->
-    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h1>Samriddhi Udyog</h1>
-                <span class="nav-tagline">Masala</span>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-text">Samriddhi</span>
+                <span class="logo-accent">Udyog</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#products" class="nav-link">Products</a></li>
-                <li><a href="#why-choose-us" class="nav-link">Why Choose Us</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#products">Masalas</a></li>
+                <li><a href="#values">Values</a></li>
             </ul>
-            <div class="hamburger" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="#contact" class="nav-cta">Get in Touch</a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
         </div>
     </nav>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <button class="close-menu"><i data-lucide="x"></i></button>
+        <nav class="mobile-nav-links">
+            <a href="#story">Our Story</a>
+            <a href="#products">Masalas</a>
+            <a href="#values">Values</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
+    <header class="hero">
+        <div class="hero-bg-canvas" id="canvas-container"></div>
+        <div class="hero-content">
+            <span class="hero-tagline-script">From an Assam Village to Your Kitchen</span>
+            <h1 class="hero-title">Pure. Potent. <br> <span class="text-accent">Handcrafted.</span></h1>
+            <p class="hero-subtitle">Experience the authentic taste of organic masalas, grown with care in Assam and
+                stone-ground for perfection.</p>
+            <div class="hero-actions">
+                <a href="#products" class="btn btn-primary">Explore Our Masalas</a>
+                <a href="#story" class="btn btn-secondary">Our Village Story</a>
+            </div>
         </div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text" data-aos="fade-up">
-                    <h1 class="hero-title">
-                        <span class="title-line">From an Assam Village</span>
-                        <span class="title-line">to Your Kitchen</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        Premium organic masalas crafted with tradition, grown with care,
-                        and delivered with love from our Assam village to kitchens across India.
+        <div class="scroll-indicator">
+            <span>Scroll to Discover</span>
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Brand Story Preview -->
+    <section id="story" class="section story-preview">
+        <div class="container">
+            <div class="glass-card story-card fade-in">
+                <div class="story-content">
+                    <span class="section-tag">Our Origins</span>
+                    <h2 class="section-heading">Rooted in Tradition</h2>
+                    <p>In a small, serene village in Assam, we believe that good food starts with good intentions.
+                        Samriddhi Udyog was born from a desire to preserve the age-old art of spice making—where every
+                        turmeric root and chili pepper is hand-picked, sun-dried, and ground with patience.</p>
+                    <p>No factories. No chemicals. Just nature's honest flavors, brought directly to your home.</p>
+                    <div class="signature">Samriddhi Udyog Family</div>
+                </div>
+                <div class="story-visual">
+                    <!-- Placeholder for an image, using a decorative div for now -->
+                    <div class="visual-placeholder">
+                        <i data-lucide="sprout" size="64"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Highlights -->
+    <section id="products" class="section products">
+        <div class="container">
+            <div class="section-header center-text fade-in">
+                <span class="section-tag">The Collection</span>
+                <h2 class="section-heading">Our Organic Masalas</h2>
+                <p class="section-sub">Free from artificial colors and preservatives.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card glass-card hover-lift fade-in">
+                    <div class="product-badge">Organic</div>
+                    <div class="product-icon color-turmeric">
+                        <div class="icon-circle"></div>
+                    </div>
+                    <h3>Organic Haldi</h3>
+                    <p class="product-desc">Pure, high-curcumin turmeric powder with a vibrant golden hue and earthy
+                        aroma.</p>
+                    <div class="product-meta">
+                        <span><i data-lucide="check"></i> Antibiotic</span>
+                        <span><i data-lucide="check"></i> Immunity</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card glass-card hover-lift fade-in">
+                    <div class="product-badge">Spicy</div>
+                    <div class="product-icon color-chilli">
+                        <div class="icon-circle"></div>
+                    </div>
+                    <h3>Red Chilli</h3>
+                    <p class="product-desc">Sun-dried red chillies, ground to perfection for the right balance of heat
+                        and color.</p>
+                    <div class="product-meta">
+                        <span><i data-lucide="check"></i> Natural Oil</span>
+                        <span><i data-lucide="check"></i> Farm Fresh</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card glass-card hover-lift fade-in">
+                    <div class="product-badge">Aromatic</div>
+                    <div class="product-icon color-jeera">
+                        <div class="icon-circle"></div>
+                    </div>
+                    <h3>Jeera Powder</h3>
+                    <p class="product-desc">Roasted cumin seeds ground into a fine powder that transforms any curry.</p>
+                    <div class="product-meta">
+                        <span><i data-lucide="check"></i> Digestive</span>
+                        <span><i data-lucide="check"></i> Rich Aroma</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card glass-card hover-lift fade-in">
+                    <div class="product-badge">Fresh</div>
+                    <div class="product-icon color-daniya">
+                        <div class="icon-circle"></div>
+                    </div>
+                    <h3>Daniya Powder</h3>
+                    <p class="product-desc">Fresh coriander seeds, carefully selected for their citrusy and sweet notes.
                     </p>
-                    <div class="hero-highlights">
-                        <div class="highlight-item" data-aos="fade-up" data-aos-delay="100">
-                            <i data-lucide="leaf"></i>
-                            <span>100% Organic</span>
-                        </div>
-                        <div class="highlight-item" data-aos="fade-up" data-aos-delay="200">
-                            <i data-lucide="shield-check"></i>
-                            <span>No Chemicals</span>
-                        </div>
-                        <div class="highlight-item" data-aos="fade-up" data-aos-delay="300">
-                            <i data-lucide="droplets"></i>
-                            <span>No Artificial Color</span>
-                        </div>
-                        <div class="highlight-item" data-aos="fade-up" data-aos-delay="400">
-                            <i data-lucide="map-pin"></i>
-                            <span>Locally Sourced</span>
-                        </div>
-                    </div>
-                    <div class="hero-cta">
-                        <button class="cta-button primary" onclick="scrollToSection('products')">
-                            Explore Our Masalas
-                        </button>
-                        <button class="cta-button secondary" onclick="scrollToSection('about')">
-                            Our Story
-                        </button>
-                    </div>
-                </div>
-                <div class="hero-visual" data-aos="fade-left">
-                    <div class="spice-illustration">
-                        <div class="spice-card haldi">
-                            <div class="spice-icon">🟡</div>
-                            <span>Haldi</span>
-                        </div>
-                        <div class="spice-card chilli">
-                            <div class="spice-icon">🔴</div>
-                            <span>Chilli</span>
-                        </div>
-                        <div class="spice-card jeera">
-                            <div class="spice-icon">🟤</div>
-                            <span>Jeera</span>
-                        </div>
-                        <div class="spice-card daniya">
-                            <div class="spice-icon">🟢</div>
-                            <span>Daniya</span>
-                        </div>
+                    <div class="product-meta">
+                        <span><i data-lucide="check"></i> Cooling</span>
+                        <span><i data-lucide="check"></i> Flavorful</span>
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
-                <span>Scroll to explore</span>
+
+            <div class="center-cta fade-in">
+                <a href="#contact" class="link-arrow">View All Products <i data-lucide="arrow-right"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Why Choose Us -->
+    <section id="values" class="section values">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Our Story</h2>
-                <p class="section-subtitle">From a small village in Assam to your kitchen</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <h3>The Meaning of Samriddhi</h3>
-                    <div class="story-card">
-                        <h4>Founded in 2025</h4>
-                        <p>Building the future of organic spices with traditional values</p>
-                    </div>
-                    <p>
-                        "Samriddhi" means prosperity and growth in Sanskrit. What started as a small
-                        family tradition in an Assam village has grown into a mission to bring the
-                        purest, most authentic masalas to kitchens across India.
-                    </p>
-                    <p>
-                        Our founders grew up watching their grandparents grind spices by hand,
-                        understanding that true flavor comes from patience, tradition, and respect
-                        for nature. Today, we honor those values while embracing modern quality standards.
-                    </p>
-                    <div class="about-values">
-                        <div class="value-item">
-                            <i data-lucide="heart"></i>
-                            <div>
-                                <h4>Family Values</h4>
-                                <p>Every masala carries the love and care of our family traditions</p>
-                            </div>
-                        </div>
-                        <div class="value-item">
-                            <i data-lucide="tree-pine"></i>
-                            <div>
-                                <h4>Pure & Natural</h4>
-                                <p>No chemicals, no artificial colors, just pure spice goodness</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="values-grid">
+                <div class="value-item fade-in">
+                    <div class="value-icon"><i data-lucide="heart-handshake"></i></div>
+                    <h4>Trustworthy</h4>
+                    <p>Honest sourcing from local farmers we know by name.</p>
                 </div>
-                <div class="about-visual" data-aos="fade-left">
-                    <div class="village-illustration">
-                        <div class="village-card">
-                            <i data-lucide="home" class="village-icon"></i>
-                            <h4>Assam Village</h4>
-                            <p>Where it all began</p>
-                        </div>
-                        <!-- Arrow indicator can be CSS pseudo-element or separate -->
-                        <div class="modern-card">
-                            <i data-lucide="factory" class="modern-icon"></i>
-                            <h4>Modern Quality</h4>
-                            <p>Global Standards</p>
-                        </div>
-                    </div>
+                <div class="value-item fade-in">
+                    <div class="value-icon"><i data-lucide="leaf"></i></div>
+                    <h4>100% Natural</h4>
+                    <p>Zero artificial additives, colors, or preservatives.</p>
+                </div>
+                <div class="value-item fade-in">
+                    <div class="value-icon"><i data-lucide="award"></i></div>
+                    <h4>Premium Quality</h4>
+                    <p>Hand-pounded textures that retain essential oils.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Our Premium Masalas</h2>
-                <p class="section-subtitle">Handcrafted with love from the finest ingredients</p>
+    <!-- Trust Strip -->
+    <div class="trust-strip">
+        <div class="container trust-container">
+            <div class="trust-stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Organic</span>
             </div>
-            <div class="products-grid">
-                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="product-image">
-                        <div class="spice-color haldi-color"></div>
-                        <div class="product-badge">Organic</div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Haldi Powder</h3>
-                        <p>Pure turmeric powder with natural golden color and earthy aroma</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Anti-inflammatory</span>
-                            <span class="feature-tag">Antioxidant</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="product-image">
-                        <div class="spice-color chilli-color"></div>
-                        <div class="product-badge">Spicy</div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Chilli Powder</h3>
-                        <p>Fiery red chillies ground to perfection for authentic Indian heat</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Natural Heat</span>
-                            <span class="feature-tag">Rich Color</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="product-image">
-                        <div class="spice-color jeera-color"></div>
-                        <div class="product-badge">Aromatic</div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Jeera Powder</h3>
-                        <p>Fragrant cumin seeds ground fresh for distinctive flavor</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Digestive</span>
-                            <span class="feature-tag">Aromatic</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="product-image">
-                        <div class="spice-color daniya-color"></div>
-                        <div class="product-badge">Fresh</div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Daniya Powder</h3>
-                        <p>Coriander seeds with bright, citrusy notes for perfect seasoning</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Citrusy</span>
-                            <span class="feature-tag">Fresh</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="product-image">
-                        <div class="spice-color garam-color"></div>
-                        <div class="product-badge">Blend</div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Garam Masala</h3>
-                        <p>Our signature blend of 12 premium spices for authentic Indian flavor</p>
-                        <div class="product-features">
-                            <span class="feature-tag">12 Spices</span>
-                            <span class="feature-tag">Signature</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="product-image">
-                        <div class="spice-color meat-color"></div>
-                        <div class="product-badge">Special</div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Meat Masala</h3>
-                        <p>Specially crafted blend for tender, flavorful meat preparations</p>
-                        <div class="product-features">
-                            <span class="feature-tag">Tenderizing</span>
-                            <span class="feature-tag">Flavorful</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="trust-divider"></div>
+            <div class="trust-stat">
+                <span class="stat-number">0%</span>
+                <span class="stat-label">Chemicals</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-stat">
+                <span class="stat-number">Assam</span>
+                <span class="stat-label">Origin</span>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="why-choose-us">
+    <!-- Final CTA -->
+    <section id="contact" class="section cta-section">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Why Choose Samriddhi?</h2>
-                <p class="section-subtitle">The difference you can taste in every bite</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon">
-                        <i data-lucide="home"></i>
-                    </div>
-                    <h3>Village-Based Production</h3>
-                    <p>Our spices come directly from local farmers in Assam, ensuring freshness and supporting local
-                        communities.</p>
-                </div>
-
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon">
-                        <i data-lucide="sprout"></i>
-                    </div>
-                    <h3>Organic & Natural</h3>
-                    <p>100% organic cultivation with no harmful chemicals, pesticides, or artificial additives.</p>
-                </div>
-
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon">
-                        <i data-lucide="shield"></i>
-                    </div>
-                    <h3>Hygienic Processing</h3>
-                    <p>State-of-the-art facilities with strict hygiene standards ensure clean, safe products.</p>
-                </div>
-
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-icon">
-                        <i data-lucide="grape"></i>
-                    </div>
-                    <h3>Small-Batch Grinding</h3>
-                    <p>Grinding in small batches preserves the natural oils and flavors of each spice.</p>
-                </div>
-
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="feature-icon">
-                        <i data-lucide="clock"></i>
-                    </div>
-                    <h3>Freshness Guaranteed</h3>
-                    <p>From harvest to your kitchen in the shortest time possible, preserving maximum flavor.</p>
-                </div>
-
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="feature-icon">
-                        <i data-lucide="star"></i>
-                    </div>
-                    <h3>Family Tradition</h3>
-                    <p>Recipes passed down through generations, perfected over decades of culinary excellence.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Section -->
-    <section class="trust-section">
-        <div class="container">
-            <div class="trust-grid">
-                <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
-                    <h4>100%</h4>
-                    <span>Natural</span>
-                </div>
-                <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
-                    <h4>0%</h4>
-                    <span>Chemicals</span>
-                </div>
-                <div class="trust-item" data-aos="fade-up" data-aos-delay="300">
-                    <h4>50+</h4>
-                    <span>Partner Farmers</span>
-                </div>
-                <div class="trust-item" data-aos="fade-up" data-aos-delay="400">
-                    <h4>1000+</h4>
-                    <span>Happy Kitchens</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">Ready to experience authentic flavors?</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-card">
-                        <h3>Visit Our Village</h3>
-                        <div class="contact-item">
-                            <i data-lucide="map-pin"></i>
-                            <div>
-                                <strong>Address</strong>
-                                <p>Samriddhi Udyog<br>Assam Village, India</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i data-lucide="phone"></i>
-                            <div>
-                                <strong>Phone</strong>
-                                <p>+91 XXXXXXXXXX</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i data-lucide="mail"></i>
-                            <div>
-                                <strong>Email</strong>
-                                <p>sambriddhiyudog@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="whatsapp-cta">
-                        <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-button" target="_blank" rel="noopener">
-                            <i data-lucide="message-circle"></i>
-                            Chat on WhatsApp
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form-container" data-aos="fade-left">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
-                        </div>
-                        <div class="form-group">
-                            <select id="interest" name="interest" required>
-                                <option value="">I'm interested in...</option>
-                                <option value="bulk">Bulk Orders</option>
-                                <option value="retail">Retail Purchase</option>
-                                <option value="franchise">Franchise Opportunities</option>
-                                <option value="partnership">Business Partnership</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="4" placeholder="Your Message"
-                                required></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">
-                            Send Message
-                            <i data-lucide="send"></i>
-                        </button>
-                    </form>
+            <div class="cta-card glass-card fade-in">
+                <h2 class="section-heading">Bring the Village to Your Kitchen</h2>
+                <p>Ready to taste the difference? Contact us for orders, dealerships, or just to say hello.</p>
+                <div class="contact-links">
+                    <a href="mailto:sambriddhiyudog@gmail.com" class="btn btn-primary"><i data-lucide="mail"></i> Email
+                        Us</a>
+                    <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-outline"><i data-lucide="message-circle"></i>
+                        WhatsApp</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Samriddhi Udyog Masala</h3>
-                    <p>From an Assam Village to Your Kitchen</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#why-choose-us">Why Choose Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-products">
-                    <h4>Our Products</h4>
-                    <ul>
-                        <li>Haldi Powder</li>
-                        <li>Chilli Powder</li>
-                        <li>Jeera Powder</li>
-                        <li>Daniya Powder</li>
-                        <li>Garam Masala</li>
-                        <li>Meat Masala</li>
-                    </ul>
-                </div>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="logo-text footer-logo">Samriddhi Udyog</span>
+                <p>Authentic spices from the heart of Assam.</p>
             </div>
-            <div class="footer-bottom">
-                <p>© 2025 Samriddhi Udyog Masala. All rights reserved.</p>
+            <div class="footer-right">
+                <p>&copy; 2025 Samriddhi Udyog Masala. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
